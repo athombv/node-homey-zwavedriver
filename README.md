@@ -18,6 +18,7 @@ File: `/drivers/mydriver/driver.js`
 const ZwaveDriver = require('homey-zwavedriver');
 
 module.exports = new ZwaveDriver('mydriver', {
+	debug: false, // set to true to view all incoming events
 	capabilities: {
 		'onoff': {
 			'command_class'				: 'COMMAND_CLASS_SWITCH_BINARY',
