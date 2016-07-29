@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/athombv/node-homey-zwavedriver/issues"
   },
-  "homepage": "https://github.com/athombv/node-homey-zwavedriver#readme"
+  "homepage": "https://github.com/athombv/node-homey-zwavedriver#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
