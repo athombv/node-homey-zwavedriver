@@ -1,11 +1,15 @@
 # ZwaveDriver
 Generic class to map Z-Wave CommandClasses to Homey capabilities, for faster Z-Wave App development.
 
+## Z-Wave docs
+
+Please also read the Homey Z-Wave docs here: [https://developers.athom.com/library/zwave/]()
+
 ## Installation
 
 ```
 cd /path/to/com.your.homeyapp/
-npm install --save https://github.com/athombv/node-homey-zwavedriver
+git submodule add git@github.com:athombv/node-homey-zwavedriver.git node_modules/homey-zwavedriver
 ```
 
 ## Example
@@ -13,7 +17,7 @@ npm install --save https://github.com/athombv/node-homey-zwavedriver
 File: `/drivers/mydriver/driver.js`
 
 ```javascript
-"use strict";
+'use strict';
 
 const ZwaveDriver = require('homey-zwavedriver');
 
@@ -45,30 +49,30 @@ module.exports = new ZwaveDriver('mydriver', {
 		}
 	},
 	settings: {
-		"always_on": {
-			"index": 1,
-			"size": 1
+		'always_on': {
+			'index': 1,
+			'size': 1
 		},
-		"led_ring_color_on": {
-			"index": 61,
-			"size": 1,
+		'led_ring_color_on': {
+			'index': 61,
+			'size': 1,
 			
 			// define a custom parser method (optional)
-			"parser": function( input ) {
+			'parser': function( input ) {
 				return new Buffer([ parseInt(input) ]);
 			}
 		},
-		"led_ring_color_off": {
-			"index": 62,
-			"size": 1
+		'led_ring_color_off': {
+			'index': 62,
+			'size': 1
 		},
-		"sensitivity": {
-			"index": 63,
-			"size": 1,
+		'sensitivity': {
+			'index': 63,
+			'size': 1,
 			
 			// set signed to false to let (0, 255) scale to (0x00, 0xFF)
 			// otherwise the domain is (-128, 127) for size=1
-			"signed": false
+			'signed': false
 		}
 	}
 });
