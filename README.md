@@ -47,24 +47,28 @@ module.exports = new ZwaveDriver('mydriver', {
 	settings: {
 		"always_on": {
 			"index": 1,
-			"size": 1,
-			"parser": function( input ) {
-				return new Buffer([ ( input === true ) ? 0 : 1 ]);
-			}
+			"size": 1
 		},
 		"led_ring_color_on": {
 			"index": 61,
 			"size": 1,
+			
+			// define a custom parser method (optional)
 			"parser": function( input ) {
 				return new Buffer([ parseInt(input) ]);
 			}
 		},
 		"led_ring_color_off": {
 			"index": 62,
+			"size": 1
+		},
+		"sensitivity": {
+			"index": 63,
 			"size": 1,
-			"parser": function( input ) {
-				return new Buffer([ parseInt(input) ]);
-			}
+			
+			// set signed to false to let (0, 255) scale to (0x00, 0xFF)
+			// otherwise the domain is (-128, 127) for size=1
+			"signed": false
 		}
 	}
 });
