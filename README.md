@@ -49,6 +49,9 @@ module.exports = new ZwaveDriver('mydriver', {
 			'optional': true // if device variably advertises a command class (e.g. cc battery when dc-powered) set this variable to true to prevent crashes
 		}
 	},
+	beforeInit: (token, callback) => {
+	    // this method is called right before the initialization of a device (before it gets marked as available)
+	},
 	settings: {
 		'always_on': {
 			'index': 1,
