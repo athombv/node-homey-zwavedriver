@@ -77,6 +77,13 @@ module.exports = new ZwaveDriver('mydriver', {
 			// set signed to false to let (0, 255) scale to (0x00, 0xFF)
 			// otherwise the domain is (-128, 127) for size=1
 			'signed': false
+		},
+		'internalSetting': {
+
+			// If the setting is for internal driver use and not a parameter
+			'noParameter': function( input ) {
+				// Run your code here
+			}
 		}
 	}
 });
