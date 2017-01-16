@@ -46,6 +46,7 @@ module.exports = new ZwaveDriver('mydriver', {
 			'command_report_parser'		: function( report ){
 				return report['Sensor Value (Parsed)'];
 			},
+			'pollInterval': "poll_interval", // The amount of seconds between asking the device for a status update (poll_interval should be defined in app.json settings)
 			'optional': true // if device variably advertises a command class (e.g. cc battery when dc-powered) set this variable to true to prevent crashes
 		}
 	},
