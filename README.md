@@ -9,7 +9,7 @@ Please also read the Homey Z-Wave docs here: [https://developers.athom.com/libra
 
 ```
 cd /path/to/com.your.homeyapp/
-git submodule add https://github.com/athombv/node-homey-zwavedriver.git
+git submodule add https://github.com/athombv/node-homey-zwavedriver.git node_modules/homey-zwavedriver
 ```
 
 ## Example
