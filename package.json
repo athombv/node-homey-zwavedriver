@@ -15,7 +15,5 @@
     "url": "https://github.com/athombv/node-homey-zwavedriver/issues"
   },
   "homepage": "https://github.com/athombv/node-homey-zwavedriver#readme",
-  "dependencies": {
-    "async": "^2.1.5"
-  }
+  "dependencies": {}
 }
