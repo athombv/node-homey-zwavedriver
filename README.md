@@ -86,9 +86,15 @@ module.exports = new ZwaveDriver('mydriver', {
 			// For using a custom setting in the driver
 		}
 	},
-	settingsSaveMessage: {
-		// If the device needs a specific way of waking up so parameters can be send,
-		// you can provide your own message when the user presses save.
+	// If the device needs a specific way of waking up so parameters can be send,
+	// you can create your own message as a dynamic function or static object, when the user presses save.
+	'customSaveMessage': function ( newSettings, oldSettings, changedKeysArr, deviceData ) {
+		// Your magic for creating a dynamic settings save message
+		return {
+			'en': 'Your wake up message'
+		}
+	}
+	'customSaveMessage': {
 		'en': 'Your wake up message'
 	}
 });
