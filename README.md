@@ -63,7 +63,7 @@ module.exports = new ZwaveDriver('mydriver', {
 		'led_ring_color_on': {
 			'index': 61,
 			'size': 1,
-			
+
 			// define a custom parser method (optional)
 			'parser': function( newValue, newSettings, deviceData ) {
 				return new Buffer([ parseInt(newValue) ]);
@@ -76,7 +76,7 @@ module.exports = new ZwaveDriver('mydriver', {
 		'sensitivity': {
 			'index': 63,
 			'size': 1,
-			
+
 			// set signed to false to let (0, 255) scale to (0x00, 0xFF)
 			// otherwise the domain is (-128, 127) for size=1
 			'signed': false
@@ -85,6 +85,17 @@ module.exports = new ZwaveDriver('mydriver', {
 
 			// For using a custom setting in the driver
 		}
+	},
+	// If the device needs a specific way of waking up so parameters can be send,
+	// you can create your own message as a dynamic function or static object, when the user presses save.
+	'customSaveMessage': function ( newSettings, oldSettings, changedKeysArr, deviceData ) {
+		// Your magic for creating a dynamic settings save message
+		return {
+			'en': 'Your wake up message'
+		}
+	}
+	'customSaveMessage': {
+		'en': 'Your wake up message'
 	}
 });
 ```
