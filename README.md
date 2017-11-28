@@ -3,7 +3,7 @@ Generic class to map Z-Wave CommandClasses to Homey capabilities, for faster Z-W
 
 ## Z-Wave docs
 
-Please also read the Homey Z-Wave docs here: [https://developers.athom.com/library/zwave/](https://developers.athom.com/library/zwave/)
+Please also read the Homey Z-Wave docs here: [https://developer.athom.com/docs/apps/tutorial-Z-Wave.html](https://developer.athom.com/docs/apps/tutorial-Z-Wave.html)
 
 ## Installation
 
