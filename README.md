@@ -1,3 +1,6 @@
+# DEPRECATED
+This repository is deprecated in favor of [node-homey-meshdriver](https://github.com/athombv/node-homey-meshdriver), which is made for Homey Apps SDK v2.
+
 # ZwaveDriver
 Generic class to map Z-Wave CommandClasses to Homey capabilities, for faster Z-Wave App development.
 
