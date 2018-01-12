@@ -43,6 +43,7 @@ module.exports = new ZwaveDriver('mydriver', {
 				return report['Value'] === 'on/enable';
 			},
 			'getOnWakeUp': true, // if set to true and device is battery powered this capability will perform a GET everytime the device wakes up
+			'getOnStart': true, // if set to true when the driver initializes the get will be executed
 		},
 		'measure_power': {
 			'command_class'				: 'COMMAND_CLASS_SENSOR_MULTILEVEL',
