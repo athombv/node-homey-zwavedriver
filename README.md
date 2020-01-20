@@ -1,105 +1,19 @@
-# DEPRECATED
-This repository is deprecated in favor of [node-homey-meshdriver](https://github.com/athombv/node-homey-meshdriver), which is made for Homey Apps SDK v2.
+# homey-zwavedriver
 
-# ZwaveDriver
-Generic class to map Z-Wave CommandClasses to Homey capabilities, for faster Z-Wave App development.
+## Introduction
+This module is used to make the creation of Z-Wave apps easier.
 
-## Z-Wave docs
-
-Please also read the Homey Z-Wave docs here: [https://developer.athom.com/docs/apps/tutorial-Z-Wave.html](https://developer.athom.com/docs/apps/tutorial-Z-Wave.html)
+It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.
 
 ## Installation
 
-```
-cd /path/to/com.your.homeyapp/
-git submodule add https://github.com/athombv/node-homey-zwavedriver.git node_modules/homey-zwavedriver
-cd node_modules/homey-zwavedriver
-npm install
+```bash
+$ npm install homey-zwavedriver
 ```
 
-## Example
+## Usage
 
-File: `/drivers/mydriver/driver.js`
+See [examples/fibaroplug.js](examples/fibaroplug.js) and [examples/fibaroplug.json](examples/fibaroplug.json)
 
-```javascript
-'use strict';
-
-const ZwaveDriver = require('homey-zwavedriver');
-
-module.exports = new ZwaveDriver('mydriver', {
-	debug: false, // set to true to view all incoming events
-	capabilities: {
-		'onoff': {
-			'command_class'				: 'COMMAND_CLASS_SWITCH_BINARY',
-			'command_get'				: 'SWITCH_BINARY_GET',
-			'command_set'				: 'SWITCH_BINARY_SET',
-			'command_set_parser'		: function( value ){
-				return {
-					'Switch Value': value
-				}
-			},
-			'command_report'			: 'SWITCH_BINARY_REPORT',
-			'command_report_parser'		: function( report ){
-				return report['Value'] === 'on/enable';
-			},
-			'getOnWakeUp': true, // if set to true and device is battery powered this capability will perform a GET everytime the device wakes up
-			'getOnStart': true, // if set to true when the driver initializes the get will be executed
-		},
-		'measure_power': {
-			'command_class'				: 'COMMAND_CLASS_SENSOR_MULTILEVEL',
-			'command_get'				: 'SENSOR_MULTILEVEL_GET',
-			'command_report'			: 'SENSOR_MULTILEVEL_REPORT',
-			'command_report_parser'		: function( report ){
-				return report['Sensor Value (Parsed)'];
-			},
-			'pollInterval': "poll_interval", // The amount of seconds between asking the device for a status update (poll_interval should be defined in app.json settings)
-			'optional': true // if device variably advertises a command class (e.g. cc battery when dc-powered) set this variable to true to prevent crashes
-		}
-	},
-	beforeInit: (token, callback) => {
-	    // this method is called right before the initialization of a device (before it gets marked as available)
-	},
-	settings: {
-		'always_on': {
-			'index': 1,
-			'size': 1
-		},
-		'led_ring_color_on': {
-			'index': 61,
-			'size': 1,
-
-			// define a custom parser method (optional)
-			'parser': function( newValue, newSettings, deviceData ) {
-				return new Buffer([ parseInt(newValue) ]);
-			}
-		},
-		'led_ring_color_off': {
-			'index': 62,
-			'size': 1
-		},
-		'sensitivity': {
-			'index': 63,
-			'size': 1,
-
-			// set signed to false to let (0, 255) scale to (0x00, 0xFF)
-			// otherwise the domain is (-128, 127) for size=1
-			'signed': false
-		},
-		'custom_setting': function( newValue, oldValue, deviceData ) {
-
-			// For using a custom setting in the driver
-		}
-	},
-	// If the device needs a specific way of waking up so parameters can be send,
-	// you can create your own message as a dynamic function or static object, when the user presses save.
-	'customSaveMessage': function ( newSettings, oldSettings, changedKeysArr, deviceData ) {
-		// Your magic for creating a dynamic settings save message
-		return {
-			'en': 'Your wake up message'
-		}
-	}
-	'customSaveMessage': {
-		'en': 'Your wake up message'
-	}
-});
-```
+## Docs
+See [https://athombv.github.io/node-homey-zwavedriver](https://athombv.github.io/node-homey-zwavedriver)
