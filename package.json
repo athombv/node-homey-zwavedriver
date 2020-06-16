@@ -1,7 +1,7 @@
 {
   "name": "homey-zwavedriver",
   "version": "1.0.0",
-  "description": "",
+  "description": "This module can be used to make the development of Z-Wave apps for Homey easier.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,8 +31,16 @@
     "homey": "^2.0.4"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=12"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athombv/node-homey-zwavedriver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/athombv/node-homey-zwavedriver/issues"
+  },
+  "homepage": "https://github.com/athombv/node-homey-zwavedriver#readme",
   "watch": {
     "jsdoc": {
       "patterns": [
