@@ -1,3 +1,7 @@
 /build
-/archive
 /docs
+
+CONTRIBUTING.md
+.eslintrc.json
+.eslintignore
+.editorconfig
