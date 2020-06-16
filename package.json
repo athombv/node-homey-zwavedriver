@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "updateDocs": "npm install --only=dev; grunt jsdoc"
+    "lint": "eslint .",
+    "serve": "concurrently \"serve build/docs/\" \"npm run jsdoc:watch\"",
+    "build": "npm run jsdoc",
+    "jsdoc": "cd docs; jsdoc -c jsdoc.json",
+    "jsdoc:watch": "npm-watch jsdoc"
   },
   "keywords": [
     "zwave",
@@ -17,18 +21,26 @@
     "color-space": "^1.16.0"
   },
   "devDependencies": {
+    "braintree-jsdoc-template": "^3.3.0",
+    "concurrently": "^5.2.0",
     "eslint": "^6.8.0",
-    "eslint-config-athom": "^1.0.1",
-    "grunt": "^1.0.4",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-jsdoc": "^2.4.1",
+    "eslint-config-athom": "^2.0.6",
+    "jsdoc": "^3.6.4",
+    "npm-watch": "^0.6.0",
+    "serve": "^11.3.1",
     "homey": "^2.0.4"
   },
   "engines": {
-    "node": ">=8.16.2"
+    "node": ">=12.0.0"
   },
-  "config": {
-    "npmPublishTagProduction": "latest",
-    "npmPublishTagStaging": "beta"
+  "watch": {
+    "jsdoc": {
+      "patterns": [
+        "lib"
+      ],
+      "extensions": [
+        "js"
+      ]
+    }
   }
 }
