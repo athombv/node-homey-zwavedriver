@@ -1,19 +1,24 @@
 # homey-zwavedriver
 
 ## Introduction
-This module is used to make the creation of Z-Wave apps easier.
+This module can be used to make the development of Z-Wave apps for Homey easier.
 
 It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.
+
+Note: this module can only be used in Homey Apps built on SDKv3 which is available as of Homey v5.0.0.
 
 ## Installation
 
 ```bash
-$ npm install homey-zwavedriver
+$ npm install --save homey-zwavedriver
 ```
 
-## Usage
+## Getting started
 
-See [examples/fibaroplug.js](examples/fibaroplug.js) and [examples/fibaroplug.json](examples/fibaroplug.json)
+Start by looking at the docs for [`ZwaveDevice`](https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html). This is the class you most likely want to extend from. If you are implementing a `light` device take a look at
+ [`ZwaveLightDevice`](https://athombv.github.io/node-homey-zwavedriver/ZwaveLightDevice.html).
+
+See [examples/fibaroplug.js](https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.js) and [examples/fibaroplug.json](https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.json)
 
 ## Docs
 See [https://athombv.github.io/node-homey-zwavedriver](https://athombv.github.io/node-homey-zwavedriver)
