@@ -1,7 +1,9 @@
-/build
-/docs
+build
+docs
+examples
 
 CONTRIBUTING.md
 .eslintrc.json
 .eslintignore
 .editorconfig
+.github
