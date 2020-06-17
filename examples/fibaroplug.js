@@ -3,14 +3,12 @@
 const { ZwaveDevice } = require('homey-zwavdriver');
 
 /**
- * It is possible to use default system capability handlers (see: lib/zwave/system/capabilities), by registering a
- * capability without an options object (see below). There are also various standard ZwaveDevice implementations (see:
- * lib/zwave), some of them use settings and flow cards (which are optional) and can be found in
- * lib/system/(flows|settings).json.
+ * It is possible to use default system capability handlers (see: lib/system/capabilities), by registering a
+ * capability without an options object (see below).
  */
 class FibaroPlugDevice extends ZwaveDevice {
 
-  async onMeshInit() {
+  async onNodeInit({ node }) {
 
     // enable debugging
     this.enableDebug();
