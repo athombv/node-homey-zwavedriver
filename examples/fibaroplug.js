@@ -7,9 +7,7 @@ const { ZwaveDevice } = require('homey-zwavdriver');
  * capability without an options object (see below).
  */
 class FibaroPlugDevice extends ZwaveDevice {
-
   async onNodeInit({ node }) {
-
     // enable debugging
     this.enableDebug();
 
@@ -32,12 +30,16 @@ class FibaroPlugDevice extends ZwaveDevice {
     });
 
     // register a settings parser
-    this.registerSetting('always_on', value => new Buffer([(value === true) ? 0 : 1]));
+    this.registerSetting('always_on', value => new Buffer([value === true ? 0 : 1]));
 
     // register a report listener
-    this.registerReportListener('SWITCH_BINARY', 'SWITCH_BINARY_REPORT', (rawReport, parsedReport) => {
-      console.log('registerReportListener', rawReport, parsedReport);
-    });
+    this.registerReportListener(
+      'SWITCH_BINARY',
+      'SWITCH_BINARY_REPORT',
+      (rawReport, parsedReport) => {
+        console.log('registerReportListener', rawReport, parsedReport);
+      },
+    );
 
     // Set configuration value that is defined in manifest
     await this.configurationSet({ id: 'motion_threshold' }, 10);
@@ -56,11 +58,11 @@ class FibaroPlugDevice extends ZwaveDevice {
 
   // Overwrite the onSettings method, and change the Promise result
   onSettings(oldSettings, newSettings, changedKeysArr) {
-    return super.onSettings(oldSettings, newSettings, changedKeysArr)
+    return super
+      .onSettings(oldSettings, newSettings, changedKeysArr)
       .then(res => 'Success!')
       .catch(err => 'Error!');
   }
-
 }
 
 module.exports = FibaroPlugDevice;
