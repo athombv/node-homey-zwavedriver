@@ -9,11 +9,11 @@ const {
 describe('util', function() {
   it('should calculate dim duration', function() {
     const validDuration = calculateDimDuration(5000);
-    const validDuration2 = calculateDimDuration( 0);
+    const validDuration2 = calculateDimDuration(0);
 
     const noDuration = calculateDimDuration();
 
-    const maxValue = calculateDimDuration(15000, {maxValue: 10});
+    const maxValue = calculateDimDuration(15000, { maxValue: 10 });
 
     const outOfRangeDuration = calculateDimDuration(10000000);
     const outOfRangeDuration2 = calculateDimDuration(-10000);
