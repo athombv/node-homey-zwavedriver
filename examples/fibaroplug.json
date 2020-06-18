@@ -1,16 +1,11 @@
 {
   "id": "fibaroplug",
-  "capabilities": [
-    "onoff"
-  ],
+  "capabilities": ["onoff"],
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": 1536,
     "productId": 4096,
-    "associationGroups": [
-      1,
-      3
-    ]
+    "associationGroups": [1, 3]
   },
   "settings": [
     {

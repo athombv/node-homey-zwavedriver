@@ -3,15 +3,11 @@
 const { ZwaveDevice } = require('homey-zwavdriver');
 
 /**
- * It is possible to use default system capability handlers (see: lib/zwave/system/capabilities), by registering a
- * capability without an options object (see below). There are also various standard ZwaveDevice implementations (see:
- * lib/zwave), some of them use settings and flow cards (which are optional) and can be found in
- * lib/system/(flows|settings).json.
+ * It is possible to use default system capability handlers (see: lib/system/capabilities), by registering a
+ * capability without an options object (see below).
  */
 class FibaroPlugDevice extends ZwaveDevice {
-
-  async onMeshInit() {
-
+  async onNodeInit({ node }) {
     // enable debugging
     this.enableDebug();
 
@@ -34,12 +30,16 @@ class FibaroPlugDevice extends ZwaveDevice {
     });
 
     // register a settings parser
-    this.registerSetting('always_on', value => new Buffer([(value === true) ? 0 : 1]));
+    this.registerSetting('always_on', value => new Buffer([value === true ? 0 : 1]));
 
     // register a report listener
-    this.registerReportListener('SWITCH_BINARY', 'SWITCH_BINARY_REPORT', (rawReport, parsedReport) => {
-      console.log('registerReportListener', rawReport, parsedReport);
-    });
+    this.registerReportListener(
+      'SWITCH_BINARY',
+      'SWITCH_BINARY_REPORT',
+      (rawReport, parsedReport) => {
+        console.log('registerReportListener', rawReport, parsedReport);
+      },
+    );
 
     // Set configuration value that is defined in manifest
     await this.configurationSet({ id: 'motion_threshold' }, 10);
@@ -58,11 +58,11 @@ class FibaroPlugDevice extends ZwaveDevice {
 
   // Overwrite the onSettings method, and change the Promise result
   onSettings(oldSettings, newSettings, changedKeysArr) {
-    return super.onSettings(oldSettings, newSettings, changedKeysArr)
+    return super
+      .onSettings(oldSettings, newSettings, changedKeysArr)
       .then(res => 'Success!')
       .catch(err => 'Error!');
   }
-
 }
 
 module.exports = FibaroPlugDevice;
