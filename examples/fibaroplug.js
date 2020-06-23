@@ -1,6 +1,6 @@
 'use strict';
 
-const { ZwaveDevice } = require('homey-zwavdriver');
+const { ZwaveDevice } = require('homey-zwavedriver');
 
 /**
  * It is possible to use default system capability handlers (see: lib/system/capabilities), by registering a
