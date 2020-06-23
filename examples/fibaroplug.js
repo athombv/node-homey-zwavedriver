@@ -57,11 +57,9 @@ class FibaroPlugDevice extends ZwaveDevice {
   }
 
   // Overwrite the onSettings method, and change the Promise result
-  onSettings(oldSettings, newSettings, changedKeysArr) {
-    return super
-      .onSettings(oldSettings, newSettings, changedKeysArr)
-      .then(res => 'Success!')
-      .catch(err => 'Error!');
+  async onSettings(oldSettings, newSettings, changedKeysArr) {
+    await super.onSettings(oldSettings, newSettings, changedKeysArr);
+    return 'Success!';
   }
 }
 
