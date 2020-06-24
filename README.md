@@ -29,5 +29,5 @@ This is a non exhaustive list of breaking changes in `homey-zwavedriver` with re
 
 - `MeshDevice` is removed in favour of `ZwaveDevice`.
 - `onMeshInit()` is deprecated in favour of `onNodeInit()`.
-- `calculateZwaveDimDuration` deprecated in favour of `calculateDimDuration`.
+- `calculateZwaveDimDuration` is deprecated in favour of `calculateDimDuration`.
 - `ZwaveMeteringDevice` and `ZwaveLockDevice` are removed.
