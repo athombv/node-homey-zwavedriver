@@ -25,7 +25,7 @@ See [https://athombv.github.io/node-homey-zwavedriver](https://athombv.github.io
 
 ## Deprecations and breaking changes for homey-zwavedriver
 
-This is a non exhaustive list of breaking changes in `homey-zwavedriver` with respect to `homey-meshdriver` which might be good to be aware of:
+This is a non exhaustive list of deprecations and breaking changes in `homey-zwavedriver` with respect to `homey-meshdriver` which might be good to be aware of:
 
 - `MeshDevice` is removed in favour of `ZwaveDevice`.
 - `onMeshInit()` is deprecated in favour of `onNodeInit()`.
