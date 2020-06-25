@@ -23,7 +23,7 @@ See [examples/fibaroplug.js](https://github.com/athombv/node-homey-zwavedriver/b
 ## Docs
 See [https://athombv.github.io/node-homey-zwavedriver](https://athombv.github.io/node-homey-zwavedriver)
 
-## Breaking changes for homey-zwavedriver
+## Deprecations and breaking changes for homey-zwavedriver
 
 This is a non exhaustive list of breaking changes in `homey-zwavedriver` with respect to `homey-meshdriver` which might be good to be aware of:
 
