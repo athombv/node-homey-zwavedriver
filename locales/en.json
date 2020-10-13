@@ -1,6 +1,6 @@
 {
   "settings": {
-    "offlineNodeSaveMessage": "Settings will be saved during the next wakeup of this battery device."
+    "offlineNodeSaveMessage": "Settings will be saved during the next wakeup of this battery device. This might take a while, activate 'learn mode' to wake the device manually."
   },
   "error": {
     "unknown": "Unknown error"

@@ -1,6 +1,6 @@
 {
   "settings": {
-    "offlineNodeSaveMessage": "Instelling zullen worden opgeslagen bij volgende wakeup van dit apparaat."
+    "offlineNodeSaveMessage": "Instelling zullen worden opgeslagen bij volgende wakeup van dit apparaat. Dit kan een tijdje duren, activeer de leermodus om het apparaat handmatig wakker te maken."
   },
   "error": {
     "unknown": "Onbekend probleem"
