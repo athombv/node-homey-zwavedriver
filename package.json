@@ -1,6 +1,6 @@
 {
   "name": "homey-zwavedriver",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This module can be used to make the development of Z-Wave apps for Homey easier.",
   "main": "index.js",
   "scripts": {
