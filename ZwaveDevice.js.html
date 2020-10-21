@@ -445,11 +445,10 @@ class ZwaveDevice extends Homey.Device {
       // But not for battery devices
       if (this.node.battery === false) {
         this._getCapabilityValue(capabilityId, commandClassId).catch(err => this.error(`Could not get capability value for capabilityId: ${capabilityId}`, err));
-      } else this.error('do not use getOnStart for battery devices, use getOnOnline instead');
+      } else this.error('do not use getOnStart for battery devices');
     }
 
-    // Perform get on online, also when device is initing and device is still online (replacing
-    // the getOnStart functionality)
+    // Perform get on online, also when device is initing and device is still online
     if (capabilityGetObj.opts.getOnOnline) {
       // Get immediately if node is still online (right after pairing for example)
       if (this.node.battery === true &amp;&amp; this.node.online === true) {
@@ -793,9 +792,11 @@ class ZwaveDevice extends Homey.Device {
    * @param {String} [userOpts.getParser] - The function that is called when a GET request is
    * made. Should return an Object.
    * @param {Object} [userOpts.getOpts
-   * @param {Boolean} [userOpts.getOpts.getOnStart] - Get the value on App start.
-   * @param {Boolean} [userOpts.getOpts.getOnOnline] - Get the value when the device is marked
-   * as online.
+   * @param {Boolean} [userOpts.getOpts.getOnStart] - Get the value on App start. Avoid using this
+   * option, it should only be used for values that the device does not automatically report.
+   * @param {Boolean} [userOpts.getOpts.getOnOnline] - Only for battery devices, get the value on
+   * device wake up. Avoid using this option, it should only be used for values that the device
+   * does not automatically report.
    * @param {Number|String} [userOpts.getOpts.pollInterval] - Interval (in ms) to poll with a
    * GET request. When provided a string, the device's setting with the string as ID will be
    * used (e.g. `poll_interval`).
