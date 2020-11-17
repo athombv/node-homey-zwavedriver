@@ -71,16 +71,16 @@
     "11": "Electric Sub-Meter"
   },
   "Meter Type Scale Map": {
-    "Single-E electric meter": "Electric meter",
-    "Gas meter": "Gas and water meter",
-    "Water meter": "Gas and water meter",
-    "Twin-E electric meter": "Electric meter",
-    "3P Single Direct electric meter": "Electric meter",
-    "3P Single ECT electric meter": "Electric meter",
-    "1 Phase Direct Electricity Meter": "Electric meter",
-    "Heating meter": "Heating and Cooling Meter",
-    "Cooling meter": "Heating and Cooling Meter",
-    "Combined Heating and Cooling Meter": "Heating and Cooling Meter",
-    "Electric Sub-Meter": "Electric Sub-Meter"
+    "1": "Electric meter",
+    "2": "Gas and water meter",
+    "3": "Gas and water meter",
+    "4": "Electric meter",
+    "5": "Electric meter",
+    "6": "Electric meter",
+    "7": "Electric meter",
+    "8": "Heating and Cooling Meter",
+    "9": "Heating and Cooling Meter",
+    "10": "Heating and Cooling Meter",
+    "11": "Electric Sub-Meter"
   }
 }
