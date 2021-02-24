@@ -1,0 +1,119 @@
+// Version 3 old
+{
+  "Properties1 (Raw)": <Buffer 21>,
+  "Properties1": {
+    "Meter Type": 1,
+    "Rate Type": 1,
+    "Reserved": false,
+    "Meter Type (Parsed)": {
+      "value": "Electric Meter"
+    },
+    "Rate Type (Parsed)": {
+      "Import"
+    }
+  },
+  "Properties2 (Raw)": <Buffer 44>,
+  "Properties2": {
+    "Size": 4,
+    "Scale": 0,
+    "Precision": 2
+  },
+  "Meter Value": <Buffer 00 00 06 06>,
+  "Delta Time (Raw)": <Buffer 00 00>,
+  "Delta Time": 0,
+  "Meter Value (Parsed)": 15.42
+}
+
+// Version 3 new
+{
+  "Properties1 (Raw)": <Buffer 21>,
+  "Properties1": {
+    "Meter Type": 1,
+    "Rate Type": 1,
+    "Reserved": false,
+    "Meter Type (Parsed)": {
+      "value": "Electric Meter"
+    },
+    "Rate Type (Parsed)": {
+      "Import"
+    }
+  },
+  "Properties2 (Raw)": <Buffer 44>,
+  "Properties2": {
+    "Size": 4,
+    "Scale": 0,
+    "Precision": 2
+  },
+  "Meter Value": <Buffer 00 00 06 06>,
+  "Delta Time (Raw)": <Buffer 00 00>,
+  "Scale (Parsed)": {
+    "scale": 0,
+    "value": "kWh"
+  },
+  "Delta Time": 0,
+  "Meter Value (Parsed)": 15.42
+}
+
+// Version 4 old
+{
+  "Properties1 (Raw)": <Buffer 21>,
+  "Properties1": {
+    "Scale bit 2": false,
+    "Meter Type": "Electric meter",
+    "Rate Type": "Import",
+    "Meter Type (Parsed)": {
+      "value": "Electric meter"
+    },
+    "Rate Type (Parsed)": {
+      "value": "Import"
+    }
+  },
+  "Properties2 (Raw)": <Buffer 74>,
+  "Properties2": {
+    "Size": 4,
+    "Scale bits 10": 2,
+    "Precision": 3
+  },
+  "Meter Value": <Buffer 00 00 21 9e>,
+  "Delta Time (Raw)": <Buffer 00 22>,
+  "Delta Time": 34,
+  "Previous Meter Value": <Buffer 00 00 21>,
+  "Scale 2 (Raw)": <Buffer 95>,
+  "Scale 2": 149,
+  "Meter Value (Parsed)": 8.606
+}
+
+// Version 4 new
+{
+  "Properties1 (Raw)": <Buffer 21>,
+  "Properties1": {
+    "Scale bit 2": false,
+    "Meter Type": "Electric meter",
+    "Rate Type": "Import",
+    "Meter Type (Parsed)": {
+      "value": "Electric meter",
+    },
+    "Rate Type (Parsed)": {
+      "value": "Import"
+    }
+  },
+  "Properties2 (Raw)": <Buffer 74>,
+  "Properties2": {
+    "Size": 4,
+    "Scale bits 10": 2,
+    "Precision": 3
+  },
+  "Meter Value": <Buffer 00 00 21 9e>,
+  "Delta Time (Raw)": <Buffer 00 22>,
+  "Delta Time": 34,
+  "Previous Meter Value": <Buffer 00 00 21 95>,
+  "Scale 2 (Raw)": <Buffer 95>,
+  "Scale 2": 149,
+  "Scale (Parsed)": {
+    "scale": 2,
+    "scale 2": null,
+    "name": "W"
+  },
+  "Meter Value (Parsed)": 8.606,
+  "Previous Meter Value (Parsed)": 8.597
+}
