@@ -24,7 +24,7 @@ This module requires Homey Apps SDK v3.
 
 ## Usage
 
-Both your device should extend ZwaveDevice. Start by looking at the docs for [`ZwaveDevice`](https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html). This is the class you most likely want to extend from. If you are implementing a `light` device take a look at
+Your device should extend ZwaveDevice. Start by looking at the docs for [`ZwaveDevice`](https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html). This is the class you most likely want to extend from. If you are implementing a `light` device take a look at
  [`ZwaveLightDevice`](https://athombv.github.io/node-homey-zwavedriver/ZwaveLightDevice.html).
 
 See [examples/fibaroplug.js](https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.js) and [examples/fibaroplug.json](https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.json)
