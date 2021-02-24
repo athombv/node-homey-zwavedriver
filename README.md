@@ -4,6 +4,14 @@ This module can be used to make the development of Z-Wave apps for Homey easier.
 
 It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.
 
+This module requires Homey Apps SDK v3.
+
+## Related Modules
+
+* [node-homey-oauth2app](https://github.com/athombv/node-homey-oauth2app) — Module for OAuth2 apps
+* [node-homey-rfdriver](https://github.com/athombv/node-homey-rfdriver) — Module for RF drivers
+* [node-homey-zigbeedriver](https://github.com/athombv/node-homey-zigbeedriver) — Module for Zigbee drivers
+
 ## Installation
 
 ```bash
