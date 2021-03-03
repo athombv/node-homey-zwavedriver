@@ -1,86 +1,46 @@
 {
+  "Supported Version": 6,
+  "Meter Type": {
+    "1": "Electric meter",
+    "2": "Gas meter",
+    "3": "Water meter",
+    "4": "Heating meter",
+    "5": "Cooling meter"
+  },
   "Rate Type": {
-    "0": "Reserved",
+    "0": "Unspecified",
     "1": "Import",
     "2": "Export",
-    "3": "Reserved"
+    "3": "Import and Export"
   },
   "Meter Scale": {
     "Electric meter": {
       "0": "kWh",
-      "1": "kVARh",
-      "2": "%",
+      "1": "kVAh",
+      "2": "W",
       "3": "Pulse count",
-      "4": "kVAR",
-      "5": "Voltage (V)",
-      "6": "Amperes (A)",
-      "7": "kW"
+      "4": "V",
+      "5": "A",
+      "6": "Powerfactor",
+      "7": "kVar",
+      "8": "kVarh"
     },
-    "Gas and water meter": {
+    "Gas meter": {
+      "0": "Cubic meter",
+      "1": "Cubic feet",
+      "3": "Pulse count"
+    },
+    "Water meter": {
       "0": "Cubic meter",
       "1": "Cubic feet",
       "2": "US gallon",
-      "3": "Pulse count",
-      "4": "IMP gallon",
-      "5": "Liter",
-      "6": "kPa",
-      "7": "Centum cubic feet",
-      "8": "Cubic meter per hour",
-      "9": "Liter per hour",
-      "10": "kWh",
-      "11": "MWh",
-      "12": "KW",
-      "13": "Hours"
+      "3": "Pulse count"
     },
-    "Heating and Cooling Meter": {
-      "0": "Cubic meter (m3)",
-      "1": "Metric Ton (tonne) (t)",
-      "2": "Cubic meter per hour (m3/h)",
-      "3": "Liter per hour (l/h)",
-      "4": "kW",
-      "5": "MW",
-      "6": "kWh",
-      "7": "MWh",
-      "8": "Giga Joule (GJ)",
-      "9": "Giga Calorie (Gcal)",
-      "10": "Celsius (Co)",
-      "11": "Fahrenheit (oF)",
-      "12": "Hours"
+    "Heating meter": {
+      "0": "kWh"
     },
-    "Electric Sub-Meter": {
-      "0": "kWh",
-      "1": "kVAh",
-      "2": "W",
-      "3": "Pulse Count",
-      "4": "V",
-      "5": "A",
-      "6": "Power Factor (%)"
+    "Cooling meter": {
+      "0": "kWh"
     }
-  },
-  "Meter Type": {
-    "1": "Single-E electric meter",
-    "2": "Gas meter",
-    "3": "Water meter",
-    "4": "Twin-E electric meter",
-    "5": "3P Single Direct electric meter",
-    "6": "3P Single ECT electric meter",
-    "7": "1 Phase Direct Electricity Meter",
-    "8": "Heating meter",
-    "9": "Cooling meter",
-    "10": "Combined Heating and Cooling Meter",
-    "11": "Electric Sub-Meter"
-  },
-  "Meter Type Scale Map": {
-    "1": "Electric meter",
-    "2": "Gas and water meter",
-    "3": "Gas and water meter",
-    "4": "Electric meter",
-    "5": "Electric meter",
-    "6": "Electric meter",
-    "7": "Electric meter",
-    "8": "Heating and Cooling Meter",
-    "9": "Heating and Cooling Meter",
-    "10": "Heating and Cooling Meter",
-    "11": "Electric Sub-Meter"
   }
 }
