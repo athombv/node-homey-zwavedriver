@@ -91,19 +91,26 @@
 
   <section class="readme">
     <article>
-      <h1>homey-zwavedriver</h1>
-<h2>Introduction</h2>
+      <h1>Homey ZWaveDriver</h1>
 <p>This module can be used to make the development of Z-Wave apps for Homey easier.</p>
 <p>It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.</p>
-<p>Note: this module can only be used in Homey Apps built on SDKv3 which is available as of Homey v5.0.0.</p>
+<p>This module requires Homey Apps SDK v3.</p>
+<h2>Related Modules</h2>
+<ul>
+<li><a href="https://github.com/athombv/node-homey-oauth2app">node-homey-oauth2app</a> — Module for OAuth2 apps</li>
+<li><a href="https://github.com/athombv/node-homey-rfdriver">node-homey-rfdriver</a> — Module for RF drivers</li>
+<li><a href="https://github.com/athombv/node-homey-zigbeedriver">node-homey-zigbeedriver</a> — Module for Zigbee drivers</li>
+</ul>
 <h2>Installation</h2>
-<pre class="prettyprint source lang-bash"><code>$ npm install --save homey-zwavedriver
+<pre class="prettyprint source lang-bash"><code>$ npm install homey-zwavedriver
 </code></pre>
-<h2>Getting started</h2>
-<p>Start by looking at the docs for <a href="https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html"><code>ZwaveDevice</code></a>. This is the class you most likely want to extend from. If you are implementing a <code>light</code> device take a look at
+<h2>Requirements</h2>
+<p>This module requires Homey Apps SDK v3.</p>
+<h2>Usage</h2>
+<p>Your device should extend ZwaveDevice. Start by looking at the docs for <a href="https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html"><code>ZwaveDevice</code></a>. This is the class you most likely want to extend from. If you are implementing a <code>light</code> device take a look at
 <a href="https://athombv.github.io/node-homey-zwavedriver/ZwaveLightDevice.html"><code>ZwaveLightDevice</code></a>.</p>
 <p>See <a href="https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.js">examples/fibaroplug.js</a> and <a href="https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.json">examples/fibaroplug.json</a></p>
-<h2>Docs</h2>
+<h2>Documentation</h2>
 <p>See <a href="https://athombv.github.io/node-homey-zwavedriver">https://athombv.github.io/node-homey-zwavedriver</a></p>
 <h2>Deprecations and breaking changes for homey-zwavedriver</h2>
 <p>This is a non exhaustive list of deprecations and breaking changes in <code>homey-zwavedriver</code> with respect to <code>homey-meshdriver</code> which might be good to be aware of:</p>
