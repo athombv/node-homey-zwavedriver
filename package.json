@@ -31,7 +31,7 @@
     "homey": "^2.1.5",
     "mocha": "^7.1.1",
     "watch": "^1.0.2",
-    "homey-jsdoc-template": "github:athombv/homey-jsdoc-template#1.0.1"
+    "homey-jsdoc-template": "github:athombv/homey-jsdoc-template#1.0.2"
   },
   "engines": {
     "node": ">=12"
