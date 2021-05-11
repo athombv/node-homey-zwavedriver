@@ -9,15 +9,11 @@
     "destination": "./build/docs"
   },
   "plugins": [
-    "jsdoc-ts-utils",
     "plugins/markdown"
   ],
   "templates": {
     "default": {
       "outputSourceFiles": false
     }
-  },
-  "tsUtils": {
-    "typeScriptUtilityTypes": false
   }
 }
