@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home - Homey ZWaveDriver</title>
+
+  <meta property="og:image" content="https://etc.athom.com/logo/white/256.png" />
+  <link rel="icon" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="icon" type="image/png" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="preload" as="image" href="images/logo.png">
+  <link rel="preload" href="styles/homey.min.css" as="style">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="styles/atom-one-light.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/homey.min.css">
+</head>
+
+<body>
+<div class="container">
+  <nav class="navigation container__navigation component">
+    <header class="navigation__header">
+                <div class="navigation__logo"><a href="index.html"><img class="display-block" src="images/logo.png" width="40" height="40" alt="Homey"></a></div>
+                <h2 class="navigation__title"><a href="index.html">Homey ZWaveDriver</a></h2>
+                <button data-navigation-toggle class="navigation__button" title="menu"></button>
+             </header><div class="navigation__content" data-navigation-target><div class="navigation__search search">
+            <input title="filter" placeholder="Filter..." data-navigation-search class="search__input" type="search">
+            <button data-navigation-search-reset class="search__reset --mask" type="button" title="Reset"></button>
+           </div><div data-navigation-scroll class="navigation__scroll scroll trim"><div class="navigation__menu trim"><nav class="nav-group"><h3 class="nav-group__title">Classes</h3><ul class="nav-group__list"><li data-search-key="util" class="nav-group__item"><a href="Util.html">Util</a></li><li data-search-key="zwavedevice" class="nav-group__item"><a href="ZwaveDevice.html">ZwaveDevice</a></li><li data-search-key="zwavelightdevice" class="nav-group__item"><a href="ZwaveLightDevice.html">ZwaveLightDevice</a></li></ul></nav><h3 class="nav-group__title">Global</h3><ul class="nav-group__list"><li class="nav-group__item"><a href="global.html#calculateDimDuration">calculateDimDuration</a></li><li class="nav-group__item"><a href="global.html#calculateZwaveDimDuration">calculateZwaveDimDuration</a></li></ul></div></div></div>
+  </nav>
+
+  <main id="main" class="main container__main">
+    
+  
+  
+
+
+  
+  
+  <div class="main__center">
+    <div class="main__content align-baseline main-page trim">
+      
+
+
+
+
+    <section>
+        <article class="main-page__content"><h1>Homey ZWaveDriver</h1>
+<p>This module can be used to make the development of Z-Wave apps for Homey easier.</p>
+<p>It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.</p>
+<p>This module requires Homey Apps SDK v3.</p>
+<h2>Related Modules</h2>
+<ul>
+<li><a href="https://github.com/athombv/node-homey-oauth2app">node-homey-oauth2app</a> — Module for OAuth2 apps</li>
+<li><a href="https://github.com/athombv/node-homey-rfdriver">node-homey-rfdriver</a> — Module for RF drivers</li>
+<li><a href="https://github.com/athombv/node-homey-zigbeedriver">node-homey-zigbeedriver</a> — Module for Zigbee drivers</li>
+</ul>
+<h2>Installation</h2>
+<pre class="prettyprint source lang-bash"><code>$ npm install homey-zwavedriver
+</code></pre>
+<h2>Requirements</h2>
+<p>This module requires Homey Apps SDK v3.</p>
+<h2>Usage</h2>
+<p>Your device should extend ZwaveDevice. Start by looking at the docs for <a href="https://athombv.github.io/node-homey-zwavedriver/ZwaveDevice.html"><code>ZwaveDevice</code></a>. This is the class you most likely want to extend from. If you are implementing a <code>light</code> device take a look at
+<a href="https://athombv.github.io/node-homey-zwavedriver/ZwaveLightDevice.html"><code>ZwaveLightDevice</code></a>.</p>
+<p>See <a href="https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.js">examples/fibaroplug.js</a> and <a href="https://github.com/athombv/node-homey-zwavedriver/blob/master/examples/fibaroplug.json">examples/fibaroplug.json</a></p>
+<h2>Documentation</h2>
+<p>See <a href="https://athombv.github.io/node-homey-zwavedriver">https://athombv.github.io/node-homey-zwavedriver</a></p>
+<h2>Deprecations and breaking changes for homey-zwavedriver</h2>
+<p>This is a non exhaustive list of deprecations and breaking changes in <code>homey-zwavedriver</code> with respect to <code>homey-meshdriver</code> which might be good to be aware of:</p>
+<ul>
+<li><code>MeshDevice</code> is removed in favour of <code>ZwaveDevice</code>.</li>
+<li><code>onMeshInit()</code> is deprecated in favour of <code>onNodeInit()</code>.</li>
+<li><code>calculateZwaveDimDuration</code> is deprecated in favour of <code>calculateDimDuration</code>.</li>
+<li><code>ZwaveMeteringDevice</code> and <code>ZwaveLockDevice</code> are removed.</li>
+</ul></article>
+    </section>
+
+
+    </div>
+  </div>
+  
+
+
+
+  </main>
+</div>
+
+<script src="scripts/ready.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/toc.js"></script>
+
+<link type="text/css" rel="stylesheet" href="styles/atom-one-light.css">
+<script src="scripts/highlight.min.js"></script>
+<!--<script src="scripts/linenumber.js"></script>-->
+
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>

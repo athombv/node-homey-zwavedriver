@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Util - Homey ZWaveDriver</title>
+
+  <meta property="og:image" content="https://etc.athom.com/logo/white/256.png" />
+  <link rel="icon" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="icon" type="image/png" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="preload" as="image" href="images/logo.png">
+  <link rel="preload" href="styles/homey.min.css" as="style">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="styles/atom-one-light.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/homey.min.css">
+</head>
+
+<body>
+<div class="container">
+  <nav class="navigation container__navigation component">
+    <header class="navigation__header">
+                <div class="navigation__logo"><a href="index.html"><img class="display-block" src="images/logo.png" width="40" height="40" alt="Homey"></a></div>
+                <h2 class="navigation__title"><a href="index.html">Homey ZWaveDriver</a></h2>
+                <button data-navigation-toggle class="navigation__button" title="menu"></button>
+             </header><div class="navigation__content" data-navigation-target><div class="navigation__search search">
+            <input title="filter" placeholder="Filter..." data-navigation-search class="search__input" type="search">
+            <button data-navigation-search-reset class="search__reset --mask" type="button" title="Reset"></button>
+           </div><div data-navigation-scroll class="navigation__scroll scroll trim"><div class="navigation__menu trim"><nav class="nav-group"><h3 class="nav-group__title">Classes</h3><ul class="nav-group__list"><li data-search-key="util" class="nav-group__item"><a href="Util.html">Util</a></li><li data-search-key="zwavedevice" class="nav-group__item"><a href="ZwaveDevice.html">ZwaveDevice</a></li><li data-search-key="zwavelightdevice" class="nav-group__item"><a href="ZwaveLightDevice.html">ZwaveLightDevice</a></li></ul></nav><h3 class="nav-group__title">Global</h3><ul class="nav-group__list"><li class="nav-group__item"><a href="global.html#calculateDimDuration">calculateDimDuration</a></li><li class="nav-group__item"><a href="global.html#calculateZwaveDimDuration">calculateZwaveDimDuration</a></li></ul></div></div></div>
+  </nav>
+
+  <main id="main" class="main container__main">
+    
+  
+  
+  <div class="flex flex-direction-column flex-fill max-100">
+    <div class="flex">
+      <div class="main__center">
+        <div class="main__content align-baseline">
+          <h1 id="introduction" class="text-preset-heading-1">
+            Util
+          </h1>
+        </div>
+        <div class="main__index"></div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="main__center">
+        <div class="main__content align-baseline">
+          <section>
+  <header>
+    
+      <h2 class="display-none">
+        
+        <span class="attribs"><span class="function__type-signature"></span></span>
+        
+        Util
+        
+        <span class="function__parameters">()</span><span class="function__type-signature"></span>
+        
+      </h2>
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+      
+
+
+<section id="Util" class="method trim component">
+  
+
+  
+  <h3 class="method__name">Util</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>new Util<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Utility class with several color and range conversion methods.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section id="section-methods">
+      <h2 class="subsection-title">Methods</h2>
+
+      
+      
+
+
+<section id=".convertHSVToCIE" class="method trim component">
+  
+
+  
+  <h3 class="method__name">convertHSVToCIE</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(static) </span>convertHSVToCIE<span class="function__parameters">()</span><span class="function__type-signature">:  <a href="global.html#CIE">CIE</a>|Error</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that converts colors from the HSV (or HSL) color space to the CIE (1931) color space.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type"><a href="global.html#HSV">HSV</a></span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>HSV color object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+  <ul>
+<li>CIE color space object</li>
+</ul>
+
+
+<div class="text-preset-small">
+  
+<span class="param-type"><a href="global.html#CIE">CIE</a></span>
+|
+
+<span class="param-type">Error</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id=".convertHSVToRGB" class="method trim component">
+  
+
+  
+  <h3 class="method__name">convertHSVToRGB</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(static) </span>convertHSVToRGB<span class="function__parameters">()</span><span class="function__type-signature">:  <a href="global.html#RGB">RGB</a></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that converts colors from the HSV (or HSL) color space to the RGB color space.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type"><a href="global.html#HSV">HSV</a></span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>HSV color object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+  <ul>
+<li>RGB color object</li>
+</ul>
+
+
+<div class="text-preset-small">
+  
+<span class="param-type"><a href="global.html#RGB">RGB</a></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id=".convertRGBToCIE" class="method trim component">
+  
+
+  
+  <h3 class="method__name">convertRGBToCIE</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(static) </span>convertRGBToCIE<span class="function__parameters">()</span><span class="function__type-signature">:  <a href="global.html#CIE">CIE</a>|Error</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that converts colors from the RGB color space to the CIE (1931) color space.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type"><a href="global.html#RGB">RGB</a></span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>RGB color object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+  <ul>
+<li>CIE color space object</li>
+</ul>
+
+
+<div class="text-preset-small">
+  
+<span class="param-type"><a href="global.html#CIE">CIE</a></span>
+|
+
+<span class="param-type">Error</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id=".convertRGBToHSV" class="method trim component">
+  
+
+  
+  <h3 class="method__name">convertRGBToHSV</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(static) </span>convertRGBToHSV<span class="function__parameters">()</span><span class="function__type-signature">:  <a href="global.html#HSV">HSV</a></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that converts colors from the RGB color space to the HSV color space.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type"><a href="global.html#RGB">RGB</a></span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>RGB color object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+  <ul>
+<li>HSV color object</li>
+</ul>
+
+
+<div class="text-preset-small">
+  
+<span class="param-type"><a href="global.html#HSV">HSV</a></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id=".mapValueRange" class="method trim component">
+  
+
+  
+  <h3 class="method__name">mapValueRange</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(static) </span>mapValueRange<span class="function__parameters">(<span class="function__parameter">inputStart</span>, <span class="function__parameter">inputEnd</span>, <span class="function__parameter">outputStart</span>, <span class="function__parameter">outputEnd</span>, <span class="function__parameter">input</span>)</span><span class="function__type-signature">:  number|null</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Map a range of values to a different range of values.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>inputStart</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>inputEnd</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>outputStart</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>outputEnd</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>input</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">number</span>
+|
+
+<span class="param-type">null</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+    </section>
+    
+
+    
+
+    
+  </article>
+
+</section>
+        </div>
+        <div class="main__index">
+          
+<nav class="toc trim">
+  <h4 class="toc__title font-weight-bold">Table of Contents</h4>
+
+  <ul class="toc__list">
+    <li class="toc__item"><a class="toc__link" href="#introduction">Introduction</a></li>
+
+    
+
+    
+
+    
+
+    
+    <li class="toc__item">
+      <a class="toc__link" href="#section-methods">Methods</a>
+      <ul class="toc__list toc__list--lvl2">
+        
+        <li class="toc__item">
+          <a class="toc__link" title="convertHSVToCIE" href="#convertHSVToCIE">convertHSVToCIE</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="convertHSVToRGB" href="#convertHSVToRGB">convertHSVToRGB</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="convertRGBToCIE" href="#convertRGBToCIE">convertRGBToCIE</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="convertRGBToHSV" href="#convertRGBToHSV">convertRGBToHSV</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="mapValueRange" href="#mapValueRange">mapValueRange</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+
+    
+
+    
+  </ul>
+
+</nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  </main>
+</div>
+
+<script src="scripts/ready.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/toc.js"></script>
+
+<link type="text/css" rel="stylesheet" href="styles/atom-one-light.css">
+<script src="scripts/highlight.min.js"></script>
+<!--<script src="scripts/linenumber.js"></script>-->
+
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>

@@ -1,0 +1,4755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ZwaveDevice - Homey ZWaveDriver</title>
+
+  <meta property="og:image" content="https://etc.athom.com/logo/white/256.png" />
+  <link rel="icon" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="icon" type="image/png" href="https://etc.athom.com/logo/transparent/128.png" />
+  <link rel="preload" as="image" href="images/logo.png">
+  <link rel="preload" href="styles/homey.min.css" as="style">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="styles/atom-one-light.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/homey.min.css">
+</head>
+
+<body>
+<div class="container">
+  <nav class="navigation container__navigation component">
+    <header class="navigation__header">
+                <div class="navigation__logo"><a href="index.html"><img class="display-block" src="images/logo.png" width="40" height="40" alt="Homey"></a></div>
+                <h2 class="navigation__title"><a href="index.html">Homey ZWaveDriver</a></h2>
+                <button data-navigation-toggle class="navigation__button" title="menu"></button>
+             </header><div class="navigation__content" data-navigation-target><div class="navigation__search search">
+            <input title="filter" placeholder="Filter..." data-navigation-search class="search__input" type="search">
+            <button data-navigation-search-reset class="search__reset --mask" type="button" title="Reset"></button>
+           </div><div data-navigation-scroll class="navigation__scroll scroll trim"><div class="navigation__menu trim"><nav class="nav-group"><h3 class="nav-group__title">Classes</h3><ul class="nav-group__list"><li data-search-key="util" class="nav-group__item"><a href="Util.html">Util</a></li><li data-search-key="zwavedevice" class="nav-group__item"><a href="ZwaveDevice.html">ZwaveDevice</a></li><li data-search-key="zwavelightdevice" class="nav-group__item"><a href="ZwaveLightDevice.html">ZwaveLightDevice</a></li></ul></nav><h3 class="nav-group__title">Global</h3><ul class="nav-group__list"><li class="nav-group__item"><a href="global.html#calculateDimDuration">calculateDimDuration</a></li><li class="nav-group__item"><a href="global.html#calculateZwaveDimDuration">calculateZwaveDimDuration</a></li></ul></div></div></div>
+  </nav>
+
+  <main id="main" class="main container__main">
+    
+  
+  
+  <div class="flex flex-direction-column flex-fill max-100">
+    <div class="flex">
+      <div class="main__center">
+        <div class="main__content align-baseline">
+          <h1 id="introduction" class="text-preset-heading-1">
+            ZwaveDevice
+          </h1>
+        </div>
+        <div class="main__index"></div>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="main__center">
+        <div class="main__content align-baseline">
+          <section>
+  <header>
+    
+      <h2 class="display-none">
+        
+        <span class="attribs"><span class="function__type-signature"></span></span>
+        
+        ZwaveDevice
+        
+        <span class="function__parameters">()</span><span class="function__type-signature"></span>
+        
+      </h2>
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+      
+
+
+<section id="ZwaveDevice" class="method trim component">
+  
+
+  
+  <h3 class="method__name">ZwaveDevice</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>new ZwaveDevice<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p><a href="https://developer.athom.com/docs/apps/Device.html#getSetting">Device settings</a>
+used by system capabilities:</p>
+<ul>
+<li><code>invertWindowCoveringsDirection {boolean}</code> - Used by several windowcoverings capabilities,
+if true it will invert the up/down direction</li>
+<li><code>invertWindowCoveringsTiltDirection {boolean}</code> - Used by several windowcoverings
+capabilities, if true it will invert the tilt direction</li>
+</ul>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<h4 class="subsection-title">Properties</h4>
+
+
+<figure class="table-container trim">
+  <table class="props">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>thermostatSetpointType</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description trim last"><p>The 'Setpoint Type' used in the
+THERMOSTAT_SETPOINT commandclass for the target_temperature capability</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+    </div>
+
+    
+    <section id="section-extends">
+      <h2 class="subsection-title">Extends</h2>
+
+      
+
+
+    <ul>
+        <li>Homey.Device</li>
+    </ul>
+
+
+    </section>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section id="section-methods">
+      <h2 class="subsection-title">Methods</h2>
+
+      
+      
+
+
+<section id="_hasProp" class="method trim component">
+  
+
+  
+  <h3 class="method__name">_hasProp</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>_hasProp<span class="function__parameters">(<span class="function__parameter">object</span>, <span class="function__parameter">prop</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Utility method to check if an object has a property.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>object</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">*</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>prop</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">*</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="configurationGet" class="method trim component">
+  
+
+  
+  <h3 class="method__name">configurationGet</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>configurationGet<span class="function__parameters">(<span class="function__parameter">options</span>)</span><span class="function__type-signature">:  *</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that retrieves the value of a configuration parameter from the node.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>options</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>index</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>Parameter index</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">*</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="configurationSet" class="method trim component">
+  
+
+  
+  <h3 class="method__name">configurationSet</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>configurationSet<span class="function__parameters">(<span class="function__parameter">options</span>, <span class="function__parameter">value</span>)</span><span class="function__type-signature">:  Promise.&lt;*></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Wrapper for CONFIGURATION_SET. Provide options.id and/or options.index and options.size. By
+default options.useSettingParser is true, then the value will first be parsed by the
+registered setting parser or the system parser before sending. It will only be able to use
+the registered setting parser if options.id is provided.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>options</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+      <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>index</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+      <td class="default">
+        
+      </td>
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>size</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+      <td class="default">
+        
+      </td>
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>id</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+      <td class="default">
+        
+      </td>
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>signed</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+      <td class="default">
+        
+      </td>
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>useSettingParser</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+      <td class="default">
+        
+        true
+        
+      </td>
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Promise.&lt;*></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="disableDebug" class="method trim component">
+  
+
+  
+  <h3 class="method__name">disableDebug</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>disableDebug<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Disable debugging to the console</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="enableDebug" class="method trim component">
+  
+
+  
+  <h3 class="method__name">enableDebug</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>enableDebug<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Enable debug logging on this device. Logs all incoming reports.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="executeCapabilitySetCommand" class="method trim component">
+  
+
+  
+  <h3 class="method__name">executeCapabilitySetCommand</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>executeCapabilitySetCommand<span class="function__parameters">(<span class="function__parameter">capabilityId</span>, <span class="function__parameter">commandClassId</span>, <span class="function__parameter">value</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Promise.&lt;(string|*)></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>This method executes the capability set command for a given capability/commandClass
+combination. The capability and commandClass must be registered before this method is called.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>capabilityId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>the capability value to set (e.g 0 - 1 for dim)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>opts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>capability options object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Promise.&lt;(string|*)></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="getCommandClass" class="method trim component">
+  
+
+  
+  <h3 class="method__name">getCommandClass</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>getCommandClass<span class="function__parameters">(<span class="function__parameter">commandClassId</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Error|boolean|*</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that gets a CommandClass object by commandClassId. Optionally, it can get the object
+on a multichannel node if the multiChannelNodeId is provided.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>opts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>multiChannelNodeId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Number</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>Provide this id if the command class should be
+located on a mc node.</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Error</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">*</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="getManifestSetting" class="method trim component">
+  
+
+  
+  <h3 class="method__name">getManifestSetting</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>getManifestSetting<span class="function__parameters">(<span class="function__parameter">id</span>)</span><span class="function__type-signature">:  Object|Error</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Get a specific setting object from the manifest</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>id</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>Setting id to retrieve</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Error</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="getManifestSettings" class="method trim component">
+  
+
+  
+  <h3 class="method__name">getManifestSettings</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>getManifestSettings<span class="function__parameters">()</span><span class="function__type-signature">:  Array</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that flattens possibly nested settings and returns a flat settings array.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Array</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="getMultiChannelNodeIdsByDeviceClassGeneric" class="method trim component">
+  
+
+  
+  <h3 class="method__name">getMultiChannelNodeIdsByDeviceClassGeneric</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>getMultiChannelNodeIdsByDeviceClassGeneric<span class="function__parameters">(<span class="function__parameter">deviceClassGeneric</span>)</span><span class="function__type-signature">:  Array</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that gets all multi channel node ids that have a specific deviceClassGeneric.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>deviceClassGeneric</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Array</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="hasCommandClass" class="method trim component">
+  
+
+  
+  <h3 class="method__name">hasCommandClass</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>hasCommandClass<span class="function__parameters">(<span class="function__parameter">commandClassId</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  boolean</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that will check if the node has the provided command class</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>For example: SWITCH_BINARY</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>opts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>multiChannelNodeId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>Multi channel node id to check for command class</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">boolean</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="meterReset" class="method trim component">
+  
+
+  
+  <h3 class="method__name">meterReset</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>meterReset<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>)</span><span class="function__type-signature">:  Promise.&lt;unknown></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that resets the accumulated power meter value on the node. It tries to find the root
+node of the device and then looks for the COMMAND_CLASS_METER.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>multiChannelNodeId</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>define the multi channel node id in case the
+COMMAND_CLASS_METER is on a multi channel node.</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Promise.&lt;unknown></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="onDeleted" class="method trim component">
+  
+
+  
+  <h3 class="method__name">onDeleted</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>onDeleted<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Remove all listeners and intervals from node</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="onMeshInit" class="method trim component">
+  
+
+  
+  <h3 class="method__name">onMeshInit</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(abstract) </span>onMeshInit<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+
+</section>
+
+      
+      
+
+
+<section id="onNodeInit" class="method trim component">
+  
+
+  
+  <h3 class="method__name">onNodeInit</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(abstract) </span>onNodeInit<span class="function__parameters">(<span class="function__parameter">node</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>This method can be overridden. It will be called when the <a href="ZwaveDevice.html">ZwaveDevice</a> instance is
+ready and did initialize a Homey.ZwaveNode.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>node</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Homey.ZwaveNode</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Example</h4>
+      
+    <pre class="highlight"><code>const { ZwaveDevice } = require('homey-zwavedriver');
+
+class MyZwaveDevice extends ZwaveDevice {
+  onNodeInit({ node }) {
+
+    // `node` is also available as `this.node` on the ZwaveDevice instance after
+    // `onNodeInit` has been invoked.
+    await node.CommandClass.COMMAND_CLASS_BASIC.BASIC_SET({ "Value": true });
+  }
+}</code></pre>
+
+
+    </section>
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="onSettings" class="method trim component">
+  
+
+  
+  <h3 class="method__name">onSettings</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>onSettings<span class="function__parameters">(<span class="function__parameter">oldSettings</span>, <span class="function__parameter">newSettings</span>, <span class="function__parameter">changedKeysArr</span>)</span><span class="function__type-signature">:  Promise</span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that handles changing settings for Z-Wave devices. It iterates over the changed
+settings and executes a CONFIGURATION_SET in sync. If all succeed, it will resolve, if one
+or more fail it will reject with an error of concatenated error messages (to see which
+settings failed if more than one).</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>oldSettings</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>newSettings</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>changedKeysArr</code></td>
+      
+
+      <td class="type">
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Promise</span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="printNode" class="method trim component">
+  
+
+  
+  <h3 class="method__name">printNode</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>printNode<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Print the current Node information with Command Classes and their versions</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="printNodeSummary" class="method trim component">
+  
+
+  
+  <h3 class="method__name">printNodeSummary</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>printNodeSummary<span class="function__parameters">()</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Prints oneliner node summary, e.g. firmware information and device identifiers.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="refreshCapabilityValue" class="method trim component">
+  
+
+  
+  <h3 class="method__name">refreshCapabilityValue</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature">(async) </span>refreshCapabilityValue<span class="function__parameters">(<span class="function__parameter">capabilityId,</span>, <span class="function__parameter">commandClassId,</span>)</span><span class="function__type-signature">:  Promise.&lt;unknown></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Method that refreshes the capability value once. If you want to poll this value please use
+the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapability">ZwaveDevice#registerCapability</a></p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>capabilityId,</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>the string id of the Homey capability</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId,</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>the Z-Wave command class used for this request</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Returns</h4>
+      
+      
+
+<div class="text-preset-small">
+  
+<span class="param-type">Promise.&lt;unknown></span>
+
+
+</div>
+
+    </section>
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="registerCapability" class="method trim component">
+  
+
+  
+  <h3 class="method__name">registerCapability</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>registerCapability<span class="function__parameters">(<span class="function__parameter">capabilityId</span>, <span class="function__parameter">commandClassId</span>, <span class="function__parameter"><span class="function__parameter">userOpts</span></span><span class="function__signature-attributes">opt</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Register a Homey Capability with a Command Class.
+Multiple <code>parser</code> methods can be provided by appending a version, e.g. <code>getParserV3</code>. This
+will make sure that the highest matching version will be used, falling back to <code>getParser</code>.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>capabilityId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The Homey capability id (e.g. <code>onoff</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The command class id (e.g. <code>BASIC</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>userOpts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The object with options for this capability/commandclass
+combination. These will extend system options, if available (<code>/system/</code>).</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>get</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The command to get a value (e.g. <code>BASIC_GET</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>getParser</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The function that is called when a GET request is
+made. Should return an Object.</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>getOpts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>getOnStart</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Boolean</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Get the value on App start. Avoid using this
+option, it should only be used for values that the device does not automatically report.</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>getOnOnline</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Boolean</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Only for battery devices, get the value on
+device wake up. Avoid using this option, it should only be used for values that the device
+does not automatically report.</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>pollInterval</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Number</span>
+|
+
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Interval (in ms) to poll with a
+GET request. When provided a string, the device's setting with the string as ID will be
+used (e.g. <code>poll_interval</code>).</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>pollMultiplication</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Number</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Multiplication factor for the
+pollInterval key, must be a number. (e.g. 1000 to convert to seconds, 60.000 for minutes,
+3600000 for hours).</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>set</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The command to set a value (e.g. <code>BASIC_SET</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>setParser</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The function that is called when a SET request is
+made. Should return an Object.</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The value of the Homey capability</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>opts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Options for the capability command</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>fn</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>This function is called after a setCapabilityValue has
+been called.</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The capability value</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>opts</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The capability opts</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>report</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">String</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The command to report a value (e.g. <code>BASIC_REPORT</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>reportParserOverride</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Boolean</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>Boolean flag to determine if the
+<code>reportParser</code> method should override all report parsers. (Assumed false when not specified).</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>reportParser</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The function that is called when a REPORT
+request is made. Should return an Object.</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>report</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The report object</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>multiChannelNodeId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Number</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>An ID to use a MultiChannel Node for this
+capability.</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>fn</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>This function is called after a setCapabilityValue has
+been executed.</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+      <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+      <td class="attributes">
+        
+        &lt;optional><br>
+        
+
+        
+
+        
+      </td>
+      
+
+      
+
+      <td class="description last trim"><p>The capability value</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="registerMultiChannelReportListener" class="method trim component">
+  
+
+  
+  <h3 class="method__name">registerMultiChannelReportListener</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>registerMultiChannelReportListener<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>, <span class="function__parameter">commandClassId</span>, <span class="function__parameter">commandId</span>, <span class="function__parameter">triggerFn</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Register a multi channel report listener, which is called when a report has been received.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>multiChannelNodeId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The multi channel node id</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The ID of the Command Class (e.g. <code>BASIC</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The ID of the Command (e.g. <code>BASIC_REPORT</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>triggerFn</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>report</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The received report</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="registerReportListener" class="method trim component">
+  
+
+  
+  <h3 class="method__name">registerReportListener</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>registerReportListener<span class="function__parameters">(<span class="function__parameter">commandClassId</span>, <span class="function__parameter">commandId</span>, <span class="function__parameter">triggerFn</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Register a report listener, which is called when a report has been received.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>commandClassId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The ID of the Command Class (e.g. <code>BASIC</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>commandId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The ID of the Command (e.g. <code>BASIC_REPORT</code>)</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>triggerFn</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim">
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>report</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">Object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The received report</p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+      
+
+
+<section id="registerSetting" class="method trim component">
+  
+
+  
+  <h3 class="method__name">registerSetting</h3>
+  <span class="method__function function">
+    
+    <span class="function__type-signature"></span>registerSetting<span class="function__parameters">(<span class="function__parameter">settingId</span>, <span class="function__parameter">parserFn</span>)</span><span class="function__type-signature"></span>
+    
+  </span>
+  
+
+  
+  
+
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>Register a setting parser, which is called when a setting has changed. This is only needed
+for Z-Wave settings, which directly map between a Homey setting and a Z-Wave parameter.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <section class="method__section trim">
+      <h4>Parameters</h4>
+      
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>settingId</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">string</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The setting ID, as specified in <code>/app.json</code></p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>parserFn</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">function</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The parser function, must return a Buffer, number or boolean</p>
+        
+        <h6>Properties</h6>
+        
+
+<figure class="table-container trim">
+  <table class="params">
+    <thead>
+    <tr>
+      
+      <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+    <tr>
+      
+      <td class="name"><code>value</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">number</span>
+|
+
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The setting value</p>
+        
+      </td>
+    </tr>
+
+    
+
+    <tr>
+      
+      <td class="name"><code>zwaveObj</code></td>
+      
+
+      <td class="type">
+        
+        
+<span class="param-type">object</span>
+
+
+        
+      </td>
+
+      
+
+      
+
+      <td class="description last trim"><p>The setting's <code>zwave</code> object as defined in <code>/app.json</code></p>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+        
+      </td>
+    </tr>
+
+    
+    </tbody>
+  </table>
+</figure>
+    </section>
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+  
+
+</section>
+
+      
+    </section>
+    
+
+    
+
+    
+  </article>
+
+</section>
+        </div>
+        <div class="main__index">
+          
+<nav class="toc trim">
+  <h4 class="toc__title font-weight-bold">Table of Contents</h4>
+
+  <ul class="toc__list">
+    <li class="toc__item"><a class="toc__link" href="#introduction">Introduction</a></li>
+
+    
+
+    
+
+    
+    <li class="toc__item">
+      <a class="toc__link" href="#section-extends">Extends</a>
+    </li>
+    
+
+    
+    <li class="toc__item">
+      <a class="toc__link" href="#section-methods">Methods</a>
+      <ul class="toc__list toc__list--lvl2">
+        
+        <li class="toc__item">
+          <a class="toc__link" title="_hasProp" href="#_hasProp">_hasProp</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="configurationGet" href="#configurationGet">configurationGet</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="configurationSet" href="#configurationSet">configurationSet</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="disableDebug" href="#disableDebug">disableDebug</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="enableDebug" href="#enableDebug">enableDebug</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="executeCapabilitySetCommand" href="#executeCapabilitySetCommand">executeCapabilitySetCommand</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="getCommandClass" href="#getCommandClass">getCommandClass</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="getManifestSetting" href="#getManifestSetting">getManifestSetting</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="getManifestSettings" href="#getManifestSettings">getManifestSettings</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="getMultiChannelNodeIdsByDeviceClassGeneric" href="#getMultiChannelNodeIdsByDeviceClassGeneric">getMultiChannelNodeIdsByDeviceClassGeneric</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="hasCommandClass" href="#hasCommandClass">hasCommandClass</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="meterReset" href="#meterReset">meterReset</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="onDeleted" href="#onDeleted">onDeleted</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="onMeshInit" href="#onMeshInit">onMeshInit</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="onNodeInit" href="#onNodeInit">onNodeInit</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="onSettings" href="#onSettings">onSettings</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="printNode" href="#printNode">printNode</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="printNodeSummary" href="#printNodeSummary">printNodeSummary</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="refreshCapabilityValue" href="#refreshCapabilityValue">refreshCapabilityValue</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="registerCapability" href="#registerCapability">registerCapability</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="registerMultiChannelReportListener" href="#registerMultiChannelReportListener">registerMultiChannelReportListener</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="registerReportListener" href="#registerReportListener">registerReportListener</a>
+        </li>
+        
+        <li class="toc__item">
+          <a class="toc__link" title="registerSetting" href="#registerSetting">registerSetting</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+
+    
+
+    
+  </ul>
+
+</nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  </main>
+</div>
+
+<script src="scripts/ready.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/toc.js"></script>
+
+<link type="text/css" rel="stylesheet" href="styles/atom-one-light.css">
+<script src="scripts/highlight.min.js"></script>
+<!--<script src="scripts/linenumber.js"></script>-->
+
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>
