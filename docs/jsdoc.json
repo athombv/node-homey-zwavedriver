@@ -1,19 +1,19 @@
 {
+  "source": {
+    "include": ["./lib", "./index.js", "./lib/util"]
+  },
+  "opts": {
+    "mainpagetitle": "Homey ZWaveDriver",
+    "template": "./node_modules/homey-jsdoc-template",
+    "readme": "./README.md",
+    "destination": "./build/docs"
+  },
   "plugins": [
     "plugins/markdown"
   ],
-  "source": {
-    "include": [
-      "../README.md",
-      "../lib",
-      "../index.js"
-    ]
-  },
   "templates": {
-    "referenceTitle": "documentation homey-zwavedriver"
-  },
-  "opts": {
-    "destination": "../build/docs",
-    "template": "../node_modules/braintree-jsdoc-template"
+    "default": {
+      "outputSourceFiles": false
+    }
   }
 }
