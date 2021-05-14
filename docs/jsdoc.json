@@ -6,7 +6,7 @@
     "mainpagetitle": "Homey ZWaveDriver",
     "template": "./node_modules/homey-jsdoc-template",
     "readme": "./README.md",
-    "destination": "./build/docs"
+    "destination": "./build"
   },
   "plugins": [
     "plugins/markdown"
