@@ -1,5 +1,7 @@
 # Homey ZWaveDriver
 
+[![npm](https://img.shields.io/npm/v/homey-zwavedriver)](https://www.npmjs.com/package/homey-zwavedriver) [![Lint](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/lint.yml) [![NPM](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/deploy.yml/badge.svg)](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/deploy.yml) [![Deploy Documentation To GitHub Pages](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/docs.yml/badge.svg?branch=master)](https://github.com/athombv/node-homey-zwavedriver/actions/workflows/docs.yml)
+
 This module can be used to make the development of Z-Wave apps for Homey easier.
 
 It is essentially a map-tool from Homey-capabilities to Z-Wave Command Classes.
