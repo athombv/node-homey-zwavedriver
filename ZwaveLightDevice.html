@@ -81,7 +81,7 @@
              </header><div class="navigation__content" data-navigation-target><div class="navigation__search search">
             <input title="filter" placeholder="Filter..." data-navigation-search class="search__input" type="search">
             <button data-navigation-search-reset class="search__reset --mask" type="button" title="Reset"></button>
-           </div><div data-navigation-scroll class="navigation__scroll scroll trim"><div data-navigation class="navigation__menu trim"><nav class="nav-group"><h3 class="nav-group__title">Classes</h3><ul class="nav-group__list"><li data-lvl="0" data-search-key="util" class="nav-group__item"><a href="Util.html"> Util</a></li><li data-lvl="0" data-search-key="zwavedevice" class="nav-group__item"><a href="ZwaveDevice.html"> ZwaveDevice</a></li><li data-lvl="0" data-search-key="zwavelightdevice" class="nav-group__item"><a href="ZwaveLightDevice.html"> ZwaveLightDevice</a></li></ul></nav><h3 class="nav-group__title">Global</h3><ul class="nav-group__list"><li class="nav-group__item"><a href="global.html#calculateDimDuration">calculateDimDuration</a></li><li class="nav-group__item"><a href="global.html#calculateZwaveDimDuration">calculateZwaveDimDuration</a></li></ul></div></div></div>
+           </div><div data-navigation-scroll class="navigation__scroll scroll trim"><div data-navigation class="navigation__menu trim"><nav class="nav-group"><h3 class="nav-group__title">Classes</h3><ul class="nav-group__list"><li data-lvl="0" data-search-key="util" class="nav-group__item"><a href="Util.html"> Util</a></li><li data-lvl="0" data-search-key="zwavedevice" class="nav-group__item"><a href="ZwaveDevice.html"> ZwaveDevice</a></li><li data-lvl="0" data-search-key="zwavelightdevice" class="nav-group__item"><a href="ZwaveLightDevice.html"> ZwaveLightDevice</a></li></ul></nav></div></div></div>
   </nav>
 
   <main id="main" class="main container__main">
@@ -113,8 +113,6 @@
         
         ZwaveLightDevice
         
-        <span class="function__parameters">()</span><span class="function__type-signature"></span>
-        
       </h2>
       
       <div class="class-description text-preset-intro trim"><p>ZwaveLightDevice takes care of all commands used by XY Lighting devices
@@ -136,22 +134,8 @@ capability</p>
       
       
 
-<h2 id="section-constructor">Constructor</h2>
 
-
-<section id="ZwaveLightDevice" class="method trim component">
-  
-
-  
-  <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#ZwaveLightDevice"></a>ZwaveLightDevice</h3>
-  <span class="method__function function">
-    
-    <span class="function__type-signature"></span>new ZwaveLightDevice<span class="function__parameters">()</span><span class="function__type-signature"></span>
-    
-  </span>
-  
-
-  
+<section id="ZwaveLightDevice" class="method trim ">
   
 
   
@@ -230,13 +214,11 @@ capability</p>
 const ZwaveLightDevice = require('homey-meshdriver').ZwaveLightDevice;
 
 class myDevice extends ZwaveLightDevice {
-
   async onNodeInit({ node }) {
-
     await super.onNodeInit({ node });
     // YOUR CODE COMES HERE
-    }
-  }</code></pre>
+  }
+}</code></pre>
 
 
     </section>
@@ -275,173 +257,56 @@ class myDevice extends ZwaveLightDevice {
     
 
     
-
-    
-    <section id="section-methods">
-      <h2 class="subsection-title">Methods</h2>
+    <section id="section-members">
+      <h2 class="subsection-title">Properties</h2>
 
       
       
-
-
-<section id="_hasProp" class="method trim component">
-  
-
-  
-  <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#_hasProp"></a>_hasProp</h3>
+<section id="thermostatSetpointType" class="method component trim">
+  <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#thermostatSetpointType"></a>thermostatSetpointType</h3>
   <span class="method__function function">
-    
-    <span class="function__type-signature"></span>_hasProp<span class="function__parameters">(<span class="function__parameter">object</span>, <span class="function__parameter">prop</span>)</span><span class="function__type-signature"></span>
-    
+    <span class="function__type-signature"></span>thermostatSetpointType<span class="function__type-signature">: string</span>
   </span>
-  
 
-  
-  
-
-  
   <div class="method__content trim">
     
-    <div class="method__description">
-      <p>Utility method to check if an object has a property.</p>
+
+    
+    <div class="description trim">
+      <p>The 'Setpoint Type' used for the target_temperature capability.</p>
     </div>
     
 
     
-
-    
-
-    
-
-    
-    <section class="method__section trim">
-      <h4>Parameters</h4>
-      
-
-<figure class="table-container trim">
-  <table data-table class="params">
-    <thead>
-    <tr>
-      
-      <th>Name</th>
-      
-
-      <th>Type</th>
-
-      <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-    
-
-    <tr data-table-lvl="0" data-table-row-id="0-0"
-        data-table-row-parent="0" >
-      
-      <td class="name position-relative">
+    <h4>Type</h4>
+    <ul>
+      <li>
         
-        <div class="lvl">
-          
-        </div>
-        <code>object</code>
-        
-      </td>
-      
-
-      <td class="params__type">
-        
-        
-<span class="param-type">*</span>
+<span class="param-type">string</span>
 
 
-        
-
-        
-
-        
-
-      </td>
-
-
-      <td class="description last trim">
-      </td>
-    </tr>
-
-    
-
-    
-
-    <tr data-table-lvl="0" data-table-row-id="0-1"
-        data-table-row-parent="0" >
-      
-      <td class="name position-relative">
-        
-        <div class="lvl">
-          
-        </div>
-        <code>prop</code>
-        
-      </td>
-      
-
-      <td class="params__type">
-        
-        
-<span class="param-type">*</span>
-
-
-        
-
-        
-
-        
-
-      </td>
-
-
-      <td class="description last trim">
-      </td>
-    </tr>
-
-    
-
-    
-    
-    </tbody>
-  </table>
-</figure>
-
-
-    </section>
+      </li>
+    </ul>
     
 
     
 
 
 
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 
     
   </div>
-  
-
 </section>
+
+      
+    </section>
+    
+
+    
+    <section id="section-methods">
+      <h2 class="subsection-title">Methods</h2>
 
       
       
@@ -454,7 +319,7 @@ class myDevice extends ZwaveLightDevice {
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#configurationGet"></a>configurationGet</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>configurationGet<span class="function__parameters">(<span class="function__parameter">options</span>)</span><span class="function__type-signature">:  *</span>
+    <span class="function__type-signature">(async) </span>configurationGet<span class="function__parameters">(<span class="function__parameter">options</span>)</span><span class="function__type-signature">:  any</span>
     
   </span>
   
@@ -517,7 +382,7 @@ class myDevice extends ZwaveLightDevice {
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -622,7 +487,7 @@ class myDevice extends ZwaveLightDevice {
 
 <div class="text-preset-small">
   
-<span class="param-type">*</span>
+<span class="param-type">any</span>
 
 
 </div>
@@ -649,7 +514,7 @@ class myDevice extends ZwaveLightDevice {
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#configurationSet"></a>configurationSet</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>configurationSet<span class="function__parameters">(<span class="function__parameter">options</span>, <span class="function__parameter">value</span>)</span><span class="function__type-signature">:  Promise.&lt;*></span>
+    <span class="function__type-signature">(async) </span>configurationSet<span class="function__parameters">(<span class="function__parameter">options</span>, <span class="function__parameter">value</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
     
   </span>
   
@@ -714,6 +579,11 @@ the registered setting parser if options.id is provided.</p>
 
       <td class="params__type">
         
+        
+<span class="param-type">object</span>
+
+
+        
 
         
 
@@ -747,6 +617,11 @@ the registered setting parser if options.id is provided.</p>
       
 
       <td class="params__type">
+        
+        
+<span class="param-type">number</span>
+
+
         
 
         
@@ -789,6 +664,11 @@ the registered setting parser if options.id is provided.</p>
 
       <td class="params__type">
         
+        
+<span class="param-type">number</span>
+
+
+        
 
         
         
@@ -830,6 +710,11 @@ the registered setting parser if options.id is provided.</p>
 
       <td class="params__type">
         
+        
+<span class="param-type">number</span>
+
+
+        
 
         
         
@@ -870,6 +755,11 @@ the registered setting parser if options.id is provided.</p>
       
 
       <td class="params__type">
+        
+        
+<span class="param-type">boolean</span>
+
+
         
 
         
@@ -913,6 +803,11 @@ the registered setting parser if options.id is provided.</p>
       
 
       <td class="params__type">
+        
+        
+<span class="param-type">boolean</span>
+
+
         
 
         
@@ -970,6 +865,11 @@ the registered setting parser if options.id is provided.</p>
 
       <td class="params__type">
         
+        
+<span class="param-type">any</span>
+
+
+        
 
         
 
@@ -1019,7 +919,7 @@ the registered setting parser if options.id is provided.</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Promise.&lt;*></span>
+<span class="param-type">Promise.&lt;any></span>
 
 
 </div>
@@ -1170,7 +1070,7 @@ the registered setting parser if options.id is provided.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#executeCapabilitySetCommand"></a>executeCapabilitySetCommand</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>executeCapabilitySetCommand<span class="function__parameters">(<span class="function__parameter">capabilityId</span>, <span class="function__parameter">commandClassId</span>, <span class="function__parameter">value</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Promise.&lt;(string|*)></span>
+    <span class="function__type-signature">(async) </span>executeCapabilitySetCommand<span class="function__parameters">(<span class="function__parameter">capabilityId</span>, <span class="function__parameter">commandClassId</span>, <span class="function__parameter">value</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
     
   </span>
   
@@ -1346,7 +1246,7 @@ combination. The capability and commandClass must be registered before this meth
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -1399,7 +1299,7 @@ combination. The capability and commandClass must be registered before this meth
 
 <div class="text-preset-small">
   
-<span class="param-type">Promise.&lt;(string|*)></span>
+<span class="param-type">Promise.&lt;any></span>
 
 
 </div>
@@ -1426,7 +1326,7 @@ combination. The capability and commandClass must be registered before this meth
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#getCommandClass"></a>getCommandClass</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature"></span>getCommandClass<span class="function__parameters">(<span class="function__parameter">commandClassId</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Error|boolean|*</span>
+    <span class="function__type-signature"></span>getCommandClass<span class="function__parameters">(<span class="function__parameter">commandClassId</span>, <span class="function__parameter">opts</span>)</span><span class="function__type-signature">:  Error|boolean|any</span>
     
   </span>
   
@@ -1488,7 +1388,7 @@ on a multichannel node if the multiChannelNodeId is provided.</p>
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -1526,7 +1426,7 @@ on a multichannel node if the multiChannelNodeId is provided.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -1565,7 +1465,7 @@ on a multichannel node if the multiChannelNodeId is provided.</p>
       <td class="params__type">
         
         
-<span class="param-type">Number</span>
+<span class="param-type">number</span>
 
 
         
@@ -1638,7 +1538,7 @@ located on a mc node.</p>
 <span class="param-type">boolean</span>
 |
 
-<span class="param-type">*</span>
+<span class="param-type">any</span>
 
 
 </div>
@@ -1665,7 +1565,7 @@ located on a mc node.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#getManifestSetting"></a>getManifestSetting</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature"></span>getManifestSetting<span class="function__parameters">(<span class="function__parameter">id</span>)</span><span class="function__type-signature">:  Object|Error</span>
+    <span class="function__type-signature"></span>getManifestSetting<span class="function__parameters">(<span class="function__parameter">id</span>)</span><span class="function__type-signature">:  object|Error</span>
     
   </span>
   
@@ -1725,6 +1625,11 @@ located on a mc node.</p>
 
       <td class="params__type">
         
+        
+<span class="param-type">string</span>
+
+
+        
 
         
 
@@ -1774,7 +1679,7 @@ located on a mc node.</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 |
 
 <span class="param-type">Error</span>
@@ -1804,7 +1709,7 @@ located on a mc node.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#getManifestSettings"></a>getManifestSettings</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature"></span>getManifestSettings<span class="function__parameters">()</span><span class="function__type-signature">:  Array</span>
+    <span class="function__type-signature"></span>getManifestSettings<span class="function__parameters">()</span><span class="function__type-signature">:  Array.&lt;any></span>
     
   </span>
   
@@ -1853,7 +1758,7 @@ located on a mc node.</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Array</span>
+<span class="param-type">Array.&lt;any></span>
 
 
 </div>
@@ -1880,7 +1785,7 @@ located on a mc node.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#getMultiChannelNodeIdsByDeviceClassGeneric"></a>getMultiChannelNodeIdsByDeviceClassGeneric</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature"></span>getMultiChannelNodeIdsByDeviceClassGeneric<span class="function__parameters">(<span class="function__parameter">deviceClassGeneric</span>)</span><span class="function__type-signature">:  Array</span>
+    <span class="function__type-signature"></span>getMultiChannelNodeIdsByDeviceClassGeneric<span class="function__parameters">(<span class="function__parameter">deviceClassGeneric</span>)</span><span class="function__type-signature">:  Array.&lt;number></span>
     
   </span>
   
@@ -1941,7 +1846,7 @@ located on a mc node.</p>
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -1994,7 +1899,7 @@ located on a mc node.</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Array</span>
+<span class="param-type">Array.&lt;number></span>
 
 
 </div>
@@ -2120,7 +2025,7 @@ located on a mc node.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -2252,7 +2157,7 @@ located on a mc node.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#meterReset"></a>meterReset</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>meterReset<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>)</span><span class="function__type-signature">:  Promise.&lt;unknown></span>
+    <span class="function__type-signature">(async) </span>meterReset<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
     
   </span>
   
@@ -2363,7 +2268,7 @@ COMMAND_CLASS_METER is on a multi channel node.</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Promise.&lt;unknown></span>
+<span class="param-type">Promise.&lt;any></span>
 
 
 </div>
@@ -2460,6 +2365,47 @@ COMMAND_CLASS_METER is on a multi channel node.</p>
   
   
 
+  
+  <div class="method__content trim">
+    
+    <div class="method__description">
+      <p>deprecated since v1.0.0 - Legacy from homey-meshdriver, use onNodeInit instead.
+This method can be overridden. It will be called when the <a href="ZwaveDevice.html">ZwaveDevice</a> instance is
+ready and did initialize a Homey.ZwaveNode.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
   
 
 </section>
@@ -2620,7 +2566,7 @@ class MyZwaveDevice extends ZwaveDevice {
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#onSettings"></a>onSettings</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>onSettings<span class="function__parameters">(<span class="function__parameter">oldSettings</span>, <span class="function__parameter">newSettings</span>, <span class="function__parameter">changedKeysArr</span>)</span><span class="function__type-signature">:  Promise</span>
+    <span class="function__type-signature">(async) </span>onSettings<span class="function__parameters">(<span class="function__parameter">oldSettings</span>, <span class="function__parameter">newSettings</span>, <span class="function__parameter">changedKeysArr</span>)</span><span class="function__type-signature">:  Promise.&lt;string></span>
     
   </span>
   
@@ -2794,7 +2740,7 @@ settings failed if more than one).</p>
 
 <div class="text-preset-small">
   
-<span class="param-type">Promise</span>
+<span class="param-type">Promise.&lt;string></span>
 
 
 </div>
@@ -2945,7 +2891,7 @@ settings failed if more than one).</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#refreshCapabilityValue"></a>refreshCapabilityValue</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>refreshCapabilityValue<span class="function__parameters">(<span class="function__parameter">capabilityId,</span>, <span class="function__parameter">commandClassId,</span>)</span><span class="function__type-signature">:  Promise.&lt;unknown></span>
+    <span class="function__type-signature">(async) </span>refreshCapabilityValue<span class="function__parameters">(<span class="function__parameter">capabilityId</span>, <span class="function__parameter">commandClassId</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
     
   </span>
   
@@ -2999,7 +2945,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
         <div class="lvl">
           
         </div>
-        <code>capabilityId,</code>
+        <code>capabilityId</code>
         
       </td>
       
@@ -3007,7 +2953,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3019,7 +2965,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
       </td>
 
 
-      <td class="description last trim"><p>the string id of the Homey capability</p>
+      <td class="description last trim"><p>The string id of the Homey capability</p>
       </td>
     </tr>
 
@@ -3035,7 +2981,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
         <div class="lvl">
           
         </div>
-        <code>commandClassId,</code>
+        <code>commandClassId</code>
         
       </td>
       
@@ -3043,7 +2989,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3055,7 +3001,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
       </td>
 
 
-      <td class="description last trim"><p>the Z-Wave command class used for this request</p>
+      <td class="description last trim"><p>The Z-Wave command class used for this request</p>
       </td>
     </tr>
 
@@ -3096,7 +3042,7 @@ the parameter getOpts.pollInterval at <a href="ZwaveDevice.html#registerCapabili
 
 <div class="text-preset-small">
   
-<span class="param-type">Promise.&lt;unknown></span>
+<span class="param-type">Promise.&lt;any></span>
 
 
 </div>
@@ -3272,7 +3218,7 @@ will make sure that the highest matching version will be used, falling back to <
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -3320,7 +3266,7 @@ combination. These will extend system options, if available (<code>/system/</cod
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3366,7 +3312,7 @@ combination. These will extend system options, if available (<code>/system/</cod
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3415,7 +3361,7 @@ made. Should return an Object.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">object</span>
 
 
         
@@ -3462,7 +3408,7 @@ made. Should return an Object.</p>
       <td class="params__type">
         
         
-<span class="param-type">Boolean</span>
+<span class="param-type">boolean</span>
 
 
         
@@ -3511,7 +3457,7 @@ option, it should only be used for values that the device does not automatically
       <td class="params__type">
         
         
-<span class="param-type">Boolean</span>
+<span class="param-type">boolean</span>
 
 
         
@@ -3561,10 +3507,10 @@ does not automatically report.</p>
       <td class="params__type">
         
         
-<span class="param-type">Number</span>
+<span class="param-type">number</span>
 |
 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3614,7 +3560,7 @@ used (e.g. <code>poll_interval</code>).</p>
       <td class="params__type">
         
         
-<span class="param-type">Number</span>
+<span class="param-type">number</span>
 
 
         
@@ -3677,7 +3623,7 @@ pollInterval key, must be a number. (e.g. 1000 to convert to seconds, 60.000 for
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -3829,7 +3775,7 @@ made. Should return an Object.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -3942,7 +3888,7 @@ been called.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -3990,7 +3936,7 @@ been called.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -4051,7 +3997,7 @@ been called.</p>
       <td class="params__type">
         
         
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
         
@@ -4097,7 +4043,7 @@ been called.</p>
       <td class="params__type">
         
         
-<span class="param-type">Boolean</span>
+<span class="param-type">boolean</span>
 
 
         
@@ -4196,7 +4142,7 @@ request is made. Should return an Object.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -4257,7 +4203,7 @@ request is made. Should return an Object.</p>
       <td class="params__type">
         
         
-<span class="param-type">Number</span>
+<span class="param-type">number</span>
 
 
         
@@ -4356,7 +4302,7 @@ been executed.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -4668,7 +4614,7 @@ been executed.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -4921,7 +4867,7 @@ been executed.</p>
       <td class="params__type">
         
         
-<span class="param-type">Object</span>
+<span class="param-type">any</span>
 
 
         
@@ -5275,9 +5221,18 @@ for Z-Wave settings, which directly map between a Homey setting and a Z-Wave par
     <li class="toc__item"><a class="toc__link" href="#introduction">Introduction</a></li>
 
     
-    <li class="toc__item"><a class="toc__link" href="#section-constructor">Constructor</a></li>
-    
 
+    
+    <li class="toc__item">
+      <a class="toc__link" href="#section-members">Properties</a>
+      <ul class="toc__list toc__list--lvl2">
+        
+        <li class="toc__item">
+          <a class="toc__link" title="thermostatSetpointType" href="#thermostatSetpointType">thermostatSetpointType</a>
+        </li>
+        
+      </ul>
+    </li>
     
 
     
@@ -5290,10 +5245,6 @@ for Z-Wave settings, which directly map between a Homey setting and a Z-Wave par
     <li class="toc__item">
       <a class="toc__link" href="#section-methods">Methods</a>
       <ul class="toc__list toc__list--lvl2">
-        
-        <li class="toc__item">
-          <a class="toc__link" title="_hasProp" href="#_hasProp">_hasProp</a>
-        </li>
         
         <li class="toc__item">
           <a class="toc__link" title="configurationGet" href="#configurationGet">configurationGet</a>
