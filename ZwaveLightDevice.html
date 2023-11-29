@@ -2187,7 +2187,7 @@ located on a mc node.</p>
   <h3 class="method__name"><a data-hash-link class="method__hash-link" href="#meterReset"></a>meterReset</h3>
   <span class="method__function function">
     
-    <span class="function__type-signature">(async) </span>meterReset<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
+    <span class="function__type-signature">(async) </span>meterReset<span class="function__parameters">(<span class="function__parameter">multiChannelNodeId</span>, <span class="function__parameter">options</span>)</span><span class="function__type-signature">:  Promise.&lt;any></span>
     
   </span>
   
@@ -2200,7 +2200,9 @@ located on a mc node.</p>
     
     <div class="method__description">
       <p>Method that resets the accumulated power meter value on the node. It tries to find the root
-node of the device and then looks for the COMMAND_CLASS_METER.</p>
+node of the device and then looks for the COMMAND_CLASS_METER.
+In case of a CommandClass version &gt;= 6, the options object will be provided to set which meter
+needs to be reset and to what value. By default it resets the kWh meter to 0.</p>
     </div>
     
 
@@ -2258,6 +2260,37 @@ node of the device and then looks for the COMMAND_CLASS_METER.</p>
 
       <td class="description last trim"><p>define the multi channel node id in case the
 COMMAND_CLASS_METER is on a multi channel node.</p>
+      </td>
+    </tr>
+
+    
+
+    
+
+    <tr data-table-lvl="0" data-table-row-id="0-1"
+        data-table-row-parent="0" >
+      
+      <td class="name position-relative">
+        
+        <div class="lvl">
+          
+        </div>
+        <code>options</code>
+        
+      </td>
+      
+
+      <td class="params__type">
+        
+
+        
+
+        
+
+      </td>
+
+
+      <td class="description last trim"><p>options given to the METER_RESET command, Only used when version &gt;= 6</p>
       </td>
     </tr>
 
