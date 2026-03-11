@@ -25,7 +25,7 @@
     "eslint": "^6.8.0",
     "eslint-config-athom": "^2.0.6",
     "homey": "^2.1.5",
-    "@athombv/jsdoc-template": "^1.6.0",
+    "@athombv/jsdoc-template": "^1.6.3",
     "jsdoc": "^3.6.6",
     "jsdoc-ts-utils": "^1.1.2",
     "mocha": "^10.2.0",
