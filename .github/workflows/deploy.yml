@@ -55,9 +55,9 @@ jobs:
 
       # Configures a Node.js environment.
       - name: Set up node 12 environment
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: "12"
+          node-version: "24"
           # Needed for publishing to npm
 
       # Run `npm ci && npm run build` to re-create your local environment (make sure to commit your - package-lock.json!).
