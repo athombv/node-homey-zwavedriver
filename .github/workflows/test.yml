@@ -20,11 +20,6 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
 
-    # Define a strategy for running these tests on various operating systems in parallel.
-    strategy:
-      matrix:
-        os: [macos-latest, ubuntu-latest]
-
     steps:
       # Checks out the current repository.
       - uses: actions/checkout@v7
