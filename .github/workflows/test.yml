@@ -20,11 +20,10 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
 
-    # Define a strategy for running these tests on various operating systems and Node.js versions in parallel.
+    # Define a strategy for running these tests on various operating systems in parallel.
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest]
-        node: ["24"]
 
     steps:
       # Checks out the current repository.
@@ -33,7 +32,7 @@ jobs:
       # Configures a Node.js environment.
       - uses: actions/setup-node@v7
         with:
-          node-version: ${{ matrix.node }} # Important: use the matrix.node property when using a matrix strategy
+          node-version-file: .nvmrc
 
       # Run `npm ci` to re-create your local environment (make sure to commit your package-lock.json!).
       # Finally run `npm test` (make sure you have defined a proper test command in package.json).
