@@ -1,5 +1,16 @@
 {
   "extends": "athom",
+  "settings": {
+    "import/core-modules": ["homey", "node:test"]
+  },
+  "overrides": [
+    {
+      "files": ["test/**/*.js"],
+      "rules": {
+        "node/no-missing-require": "off"
+      }
+    }
+  ],
   "rules": {
     "no-prototype-builtins": "warn"
   }
